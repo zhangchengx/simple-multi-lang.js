@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Multi-language plugin for jQuery</title>
+    <style>
+      span[lang="fr"] {display: none}
+      span[lang="cn"] {display: none}
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="jquery-simple-multi-lang.js"></script>
+    <script>
+
+    $("document").ready(function() {
+
+      $("input[type=radio]").change(function() {
+        $("span[lang]").languageSwitcher( $(this).attr("id") );
+      });
+
+    });
+
+    </script>
+  </head>
+  <body>
+
+    <div id="language-switcher">
+      <input type="radio" id="en" name="lang" checked><label for="en">English</label>
+      <input type="radio" id="fr" name="lang"><label for="fr">French</label>
+      <input type="radio" id="cn" name="lang"><label for="cn">Chinese</label>
+
+      <br><br>
+
+      <button onclick="$('span[lang]').languageSwitcher('en')">English</button>
+      <button onclick="$('span[lang]').languageSwitcher('fr')">French</button>
+      <button onclick="$('span[lang]').languageSwitcher('cn')">Chinese</button>
+
+      <br><br>
+      
+      <a href="#" onclick="$('span[lang]').languageSwitcher('en')">English</a> 
+      <a href="#" onclick="$('span[lang]').languageSwitcher('fr')">French</a> 
+      <a href="#" onclick="$('span[lang]').languageSwitcher('cn')">Chinese</a> 
+    </div>
+
+    <br>
+
+    <div>
+      <span lang="en">Hello world!</span>
+      <span lang="fr">Bonjour le monde!</span>
+      <span lang="cn">你好，世界！</span>
+    </div>
+
+  </body>
+</html>
