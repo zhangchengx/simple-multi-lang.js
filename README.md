@@ -1,7 +1,7 @@
 # simple-multi-lang.js
 A Simple Search Engine Friendly Multi-language plugin for jQuery.
 
-##How to use
+## How to use
 All translations are wrapped in HTML tags like this:
 
 	<div>
@@ -21,20 +21,20 @@ Don't forget to hide other language:
 		span[lang="cn"] {display: none}
 	</style>
 
-##Example
-###Button:
+## Example
+### Button:
 
 	<button onclick="$('span[lang]').languageSwitcher('en')">English</button>
 	<button onclick="$('span[lang]').languageSwitcher('fr')">French</button>
 	<button onclick="$('span[lang]').languageSwitcher('cn')">Chinese</button>
 	
-###A
+### A
 
 	<a href="#" onclick="$('span[lang]').languageSwitcher('en')">English</a> 
 	<a href="#" onclick="$('span[lang]').languageSwitcher('fr')">French</a> 
 	<a href="#" onclick="$('span[lang]').languageSwitcher('cn')">Chinese</a> 
 
-###Radio:
+### Radio:
 
 	<script>
 	$("input[type=radio]").change(function() {
@@ -45,6 +45,6 @@ Don't forget to hide other language:
 	<input type="radio" id="fr" name="lang"><label for="fr">French</label>
 	<input type="radio" id="cn" name="lang"><label for="cn">Chinese</label>
 
-##Todo
+## Todo
 
 ...
