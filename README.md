@@ -5,9 +5,9 @@ A Simple Search Engine Friendly Multi-language plugin for jQuery.
 All translations are wrapped in HTML tags like this:
 
 	<div>
-	  <span lang="en">Hello world!</span>
-	  <span lang="fr">Bonjour le monde!</span>
-	  <span lang="cn">你好，世界！</span>
+		<span lang="en">Hello world!</span>
+		<span lang="fr">Bonjour le monde!</span>
+		<span lang="cn">你好，世界！</span>
 	</div>
 
 Language can be switched like this:
@@ -17,9 +17,12 @@ Language can be switched like this:
 Don't forget to hide other language:
 
 	<style>
-   		span[lang="fr"] {display: none}
+		span[lang="fr"] {display: none}
 		span[lang="cn"] {display: none}
 	</style>
+
+## Online demo
+https://jsfiddle.net/zhangchengx/xpvt214o/470356/
 
 ## Example
 ### Button:
